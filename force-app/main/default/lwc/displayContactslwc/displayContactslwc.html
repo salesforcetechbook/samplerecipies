@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Contact Records">
+        <template if:true={contacts.data}>
+            <template for:each={contacts.data} for:item="contactObj" for:index="contIndex">
+                <p key={contactObj.Id} class="slds-p-horizontal_small">
+                 {contactObj.FirstName}  {contactObj.LastName}
+                </p>     
+             </template>
+        </template>
+        <h1>Contacts records with function</h1>
+
+        <template if:true={contactList}>
+            <template for:each={contactList} for:item="contactObj" for:index="contIndex">
+                <p key={contactObj.Id} class="slds-p-horizontal_small">
+                 {contactObj.FirstName}  {contactObj.LastName}
+                </p>     
+             </template>
+        </template>
+       
+    </lightning-card>
+</template>

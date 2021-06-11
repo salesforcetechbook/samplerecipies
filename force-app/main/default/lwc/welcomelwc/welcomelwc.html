@@ -1,0 +1,11 @@
+<template>
+    <lightning-card  title="LWC World">
+        <p class="slds-var-p-horizontal_small">
+           {welcomemessage}
+           <lightning-input type="text" label="Enter some text" onchange={handleChange}></lightning-input>
+
+           <lightning-input type="text" value={welcomemessage} label="Value entered" onchange={handleChange}></lightning-input>
+
+        </p>       
+    </lightning-card>
+</template>

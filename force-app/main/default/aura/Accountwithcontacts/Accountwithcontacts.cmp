@@ -1,0 +1,17 @@
+<aura:component controller="AccountController" implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="Accounts" type="Object"/>
+    <aura:handler name="init" value="{!this}" action="{!c.retrieveAccountList}"/>
+
+  <lightning:card>
+    <aura:iteration items="{!v.Accounts}" var="actRecord">
+        <p class="slds-p-horizontal_small">
+            <div>
+                <b>Account Name : </b>{!actRecord.Name}<br/>
+                <c:AccountContacts recordId="{!actRecord.Id}"/>
+            </div>
+        </p>
+        
+      </aura:iteration>
+  </lightning:card>
+</aura:component>	
+ 

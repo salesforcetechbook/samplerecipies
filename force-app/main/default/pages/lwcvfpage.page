@@ -1,0 +1,13 @@
+<apex:page>
+    <apex:includeLightning />    
+    <div id="compContainer" />   
+    <script>
+    $Lightning.use("c:LWCAPP", function() {
+          $Lightning.createComponent("c:contactListComp",{},          
+          "compContainer",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    </script>
+</apex:page>

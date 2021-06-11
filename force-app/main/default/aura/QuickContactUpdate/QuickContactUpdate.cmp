@@ -1,0 +1,23 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >	
+    <lightning:card>
+          <p class="slds-p-horizontal_small">
+            <lightning:recordEditForm recordId="{!v.recordId}" objectApiName="Contact">
+                   <lightning:layout >
+                        <lightning:layoutItem padding="around-small">
+                        	<lightning:inputField fieldName="FirstName" />
+                      	 </lightning:layoutItem>
+                       <lightning:layoutItem padding="around-small">
+                        	<lightning:inputField fieldName="LastName" />
+                       </lightning:layoutItem>
+                       <lightning:layoutItem padding="around-small">
+                        	<lightning:inputField fieldName="Email" /> 
+                       </lightning:layoutItem>
+                       <lightning:layoutItem padding="around-small">
+                        	<lightning:inputField fieldName="Phone" />
+                       </lightning:layoutItem>
+                </lightning:layout>
+                 <lightning:button class="slds-m-top_small" variant="brand" type="submit" name="update" label="Update" />
+            </lightning:recordEditForm>
+        </p>
+    </lightning:card>
+</aura:component>

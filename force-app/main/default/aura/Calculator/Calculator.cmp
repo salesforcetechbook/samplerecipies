@@ -1,0 +1,12 @@
+<aura:component >
+	 <lightning:card title="Calculator">
+        <aura:set attribute="actions">
+            <lightning:button label="Calculate" onclick="{!c.add2Numbers}"/>
+        </aura:set>
+        <p class="slds-p-horizontal_small">
+             <lightning:input type="number" name="firstnumber" label="Enter first Number"  aura:id = "fnumber"/>
+             <lightning:input type="number" name="secondnumber" label="Enter Second Number" aura:id = "snumber"/>
+             <lightning:input type="number" name="result" label="Result" aura:id = "res"/>
+        </p>
+    </lightning:card>
+</aura:component>

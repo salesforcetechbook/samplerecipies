@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:attribute name="record" type="Object"
+  								description="The record object to be displayed"/>
+    <aura:attribute name="accountRecord" type="Object"
+  							description="A simplified view record object to be displayed"/>
+    
+    <aura:attribute name="recordError" type="String"
+  										description="An error message bound to force:recordData"/>
+    
+    <force:recordData aura:id="record" 
+                      fields="Name,BillingCity,BillingState" 
+                       recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                       targetRecord="{!v.record}"
+                       targetFields ="{!v.accountRecord}"
+                      mode="VIEW"/>
+    
+    
+    <lightning:card title="Account Details" iconName="standard:account">
+    	 <div class="slds-p-horizontal--small">
+        <p class="slds-text-heading--small">
+            <lightning:formattedText title="Billing City" value="{!v.accountRecord.BillingCity}" />
+        </p>
+             <p class="slds-text-heading--small">
+                 <lightning:formattedText title="Billing State" value="{!v.accountRecord.BillingState}" />
+             </p>
+             
+        </div>
+    </lightning:card>
+                      
+                      
+</aura:component>

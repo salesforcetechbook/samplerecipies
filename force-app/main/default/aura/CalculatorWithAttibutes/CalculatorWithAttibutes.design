@@ -1,0 +1,4 @@
+<design:component>
+	<design:attribute name="fstNumber" label="First Number" placeholder="First Number"/>
+    <design:attribute name="secNumber" label="Second Number" placeholder="Second Number"/>
+</design:component>

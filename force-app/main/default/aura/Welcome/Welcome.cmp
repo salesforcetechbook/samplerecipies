@@ -1,0 +1,4 @@
+<aura:component >
+    <br></br>
+	<h1>Welcome to Lightning World.</h1>
+</aura:component>

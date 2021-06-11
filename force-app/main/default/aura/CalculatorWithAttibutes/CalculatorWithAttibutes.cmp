@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="CalculatorCls">
+    <aura:attribute name="fstNumber" type="integer"/>
+    <aura:attribute name="secNumber" type="integer"/>
+    <aura:attribute name="resultVal" type="integer"/>
+	 <lightning:card title="Calculator With Attributes">
+        <aura:set attribute="actions">
+            <lightning:button label="Calculate" onclick="{!c.add2Numbers}" variant="brand"/>
+             <lightning:button label="Calculate with Apex" onclick="{!c.calculate2Numbers}" variant="brand"/>
+        </aura:set>
+        <p class="slds-p-horizontal_small">
+             <lightning:input type="number" name="firstnumber" label="Enter first Number"  aura:id = "fnumber" value="{!v.fstNumber}"/>
+             <lightning:input type="number" name="secondnumber" label="Enter Second Number" aura:id = "snumber" value="{!v.secNumber}"/>
+             <lightning:input type="number" name="result" label="Result" aura:id = "res" value="{!v.resultVal}"/>
+        </p>
+    </lightning:card>
+</aura:component>
