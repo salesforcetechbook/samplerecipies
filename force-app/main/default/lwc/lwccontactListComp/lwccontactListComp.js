@@ -1,4 +1,3 @@
-
 import { LightningElement,wire} from 'lwc';
 import getContactList from '@salesforce/apex/ContctController.getContactList';
 export default class LwccontactListComp extends LightningElement {

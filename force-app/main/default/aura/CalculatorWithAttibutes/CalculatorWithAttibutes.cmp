@@ -2,6 +2,7 @@
     <aura:attribute name="fstNumber" type="integer"/>
     <aura:attribute name="secNumber" type="integer"/>
     <aura:attribute name="resultVal" type="integer"/>
+    <aura:registerEvent name="applicationEvent" type="c:AppEvent"/>
 	 <lightning:card title="Calculator With Attributes">
         <aura:set attribute="actions">
             <lightning:button label="Calculate" onclick="{!c.add2Numbers}" variant="brand"/>

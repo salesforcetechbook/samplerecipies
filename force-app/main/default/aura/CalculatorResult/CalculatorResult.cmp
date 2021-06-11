@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:attribute name="result" type="integer"/>
+    <aura:handler event="c:AppEvent" action="{!c.getResult}"/>
+    
+    <lightning:card title="Cal Result">
+         <p class="slds-p-horizontal_small">
+        	Result : {!v.result}
+        </p>
+    </lightning:card>
+</aura:component>

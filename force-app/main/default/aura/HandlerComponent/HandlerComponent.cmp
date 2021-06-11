@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute name="messageFromEvent" type="String"/>
+	 <aura:handler name="cmpEvent" event="c:compEvent" action="{!c.handleComponentEvent}"/>
+    <lightning:card>
+    	 <c:NotifierComponent />
+    	<p>{!v.messageFromEvent}</p>
+    </lightning:card>
+    
+</aura:component>

@@ -1,0 +1,6 @@
+<aura:component >
+	
+  
+    <lightning:fileCard fileId="0035g0000070bEJAAY" description="Sample Description"/>
+
+</aura:component>

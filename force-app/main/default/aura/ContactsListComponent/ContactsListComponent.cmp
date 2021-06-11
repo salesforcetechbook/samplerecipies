@@ -3,4 +3,5 @@
     <aura:attribute name="Contacts" type="Object"/>
     <aura:handler name="init" value="{!this}" action="{!c.retrieveContactList}" />
     <lightning:datatable data="{! v.Contacts }" columns="{! v.Columns }" keyField="Id" hideCheckboxColumn="true"/>
-</aura:component>	
+
+</aura:component>

@@ -13,5 +13,4 @@
         
       </aura:iteration>
   </lightning:card>
-</aura:component>	
- 
+</aura:component>
