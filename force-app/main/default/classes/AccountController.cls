@@ -7,4 +7,9 @@ public with sharing class AccountController {
         List<Account> accountList = [select id,name from Account limit 20];
         return accountList; 
     }
+    @AuraEnabled
+    public static List<Account> createAccounts(List<Account> accountList){
+        insert accountList;
+        return accountList;
+    }
 }
