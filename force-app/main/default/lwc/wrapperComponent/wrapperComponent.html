@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="WrapperExample" icon-name="custom:custom63">
+        <p class="slds-var-p-horizontal_small">           
+            <template for:each={employeeList} for:item="empObj" for:index="contIndex">
+               <p key={empObj.employeeNumber}> {empObj.name} {empObj.employeeNumber} </p>
+            </template>
+        </p>
+    </lightning-card>
+</template>
