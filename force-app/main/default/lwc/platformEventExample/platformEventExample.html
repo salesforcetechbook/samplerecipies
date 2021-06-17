@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="EmpApi Example" icon-name="custom:custom14">
+      
+        <div class="slds-m-around_medium">
+            <p>Use the buttons below to subscribe and unsubscribe to a streaming channel!</p>
+
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-tile label="Account" href="/path/to/somewhere">
+                <p class="slds-truncate" title="7 Members"> {accountName}</p>
+                </lightning-tile>
+            </div>
+
+
+            <lightning-input label="Channel Name" value={channelName}
+                onchange={handleChannelName}></lightning-input>
+            <lightning-button variant="success" label="Subscribe" title="Subscribe"
+                onclick={handleSubscribe} disabled={isSubscribeDisabled}
+                class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="destructive" label="Unsubscribe" title="Unsubscribe"
+                onclick={handleUnsubscribe} disabled={isUnsubscribeDisabled}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </lightning-card>
+</template>
